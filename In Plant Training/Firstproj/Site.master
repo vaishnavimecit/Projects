@@ -1,0 +1,37 @@
+<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &lt;%@ Master Language="VB" %&gt;<br />
+        <br />
+        &lt;!DOCTYPE html&gt;<br />
+        <br />
+        &lt;html&gt;<br />
+        <br />
+        &lt;head id="head" runat="server"&gt;<br />
+        &lt;title&gt;&lt;/title&gt;<br />
+        &lt;link href="Styles/Site.css" rel="stylesheet" type="text/css" /&gt;<br />
+        &lt;/head&gt;<br />
+        <br />
+        &lt;body&gt;<br />
+        &lt;form id="form1" runat="server"&gt;<br />
+        &lt;h1&gt;Demonstrating Web Forms&lt;/h1&gt;<br />
+        &lt;div id="main"&gt;<br />
+        &lt;asp:ContentPlaceHolder ID="MainContent" runat="server"/&gt;<br />
+        &lt;p&gt;&amp;copy; &lt;%=DateTime.Now.Year%&gt; W3Schools. All rights reserved.&lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/form&gt;<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;<asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
