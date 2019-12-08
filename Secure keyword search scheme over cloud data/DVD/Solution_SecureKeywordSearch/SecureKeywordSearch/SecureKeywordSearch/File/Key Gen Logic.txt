@@ -1,0 +1,11 @@
+
+1.  Get Identity
+2. Modules of identiy
+3. Bit AND operation of Num1 and Num2
+4. Get char from array
+5. SHift 5 bits in right side
+6. Get the all chars and it will be result
+
+
+Iden = 1
+

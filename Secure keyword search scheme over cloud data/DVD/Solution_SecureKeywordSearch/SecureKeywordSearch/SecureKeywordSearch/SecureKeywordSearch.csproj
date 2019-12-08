@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93343E36-22E6-47C5-A5DA-E4AD3E75AAF0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecureKeywordSearch</RootNamespace>
+    <AssemblyName>SecureKeywordSearch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="assignkey.aspx" />
+    <Content Include="cloudhome.aspx" />
+    <Content Include="cloudlogin.aspx" />
+    <Content Include="Default2.aspx" />
+    <Content Include="Default3.aspx" />
+    <Content Include="Default4.aspx" />
+    <Content Include="Default5.aspx" />
+    <Content Include="download.aspx" />
+    <Content Include="downloadfiles1.aspx" />
+    <Content Include="filedetail.aspx" />
+    <Content Include="filereceive.aspx" />
+    <Content Include="filerequest.aspx" />
+    <Content Include="File\Comp.txt" />
+    <Content Include="File\Excel Formula.txt" />
+    <Content Include="File\GSM.txt" />
+    <Content Include="File\ip_cloud.txt" />
+    <Content Include="File\Key Gen Logic.txt" />
+    <Content Include="hacker.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="Image\123.png" />
+    <Content Include="Image\64-glossy_button_blank_aqua_rectangle.png" />
+    <Content Include="Image\back_button.png" />
+    <Content Include="Image\blue-square-vector-design_784805395.png" />
+    <Content Include="Image\blue_button.png" />
+    <Content Include="Image\button.png" />
+    <Content Include="Image\Button_Register_Small.gif" />
+    <Content Include="Image\cld.png" />
+    <Content Include="Image\clear.png" />
+    <Content Include="Image\clear2.png" />
+    <Content Include="Image\clientes.png" />
+    <Content Include="Image\clod.png" />
+    <Content Include="Image\cloud.png" />
+    <Content Include="Image\cloud1.png" />
+    <Content Include="Image\cloud112.png" />
+    <Content Include="Image\cloudlog.png" />
+    <Content Include="Image\cloudlog1.png" />
+    <Content Include="Image\cloudlog3.png" />
+    <Content Include="Image\cloudwork.png" />
+    <Content Include="Image\cloud_computing.png" />
+    <Content Include="Image\cloud_storage-home.png" />
+    <Content Include="Image\download.png" />
+    <Content Include="Image\get.png" />
+    <Content Include="Image\get1.png" />
+    <Content Include="Image\go.png" />
+    <Content Include="Image\go1.png" />
+    <Content Include="Image\go_button.png" />
+    <Content Include="Image\graph_index.png" />
+    <Content Include="Image\gray-button.png" />
+    <Content Include="Image\gray1.png" />
+    <Content Include="Image\gray2.png" />
+    <Content Include="Image\green-rect-button.svg" />
+    <Content Include="Image\hacker.png" />
+    <Content Include="Image\images.png" />
+    <Content Include="Image\img.png" />
+    <Content Include="Image\img03.gif" />
+    <Content Include="Image\img1.png" />
+    <Content Include="Image\img2.png" />
+    <Content Include="Image\img3.png" />
+    <Content Include="Image\img5.html" />
+    <Content Include="Image\img5.png" />
+    <Content Include="Image\inc.png" />
+    <Content Include="Image\key1.png" />
+    <Content Include="Image\line.png" />
+    <Content Include="Image\line1.png" />
+    <Content Include="Image\login1.png" />
+    <Content Include="Image\login2.png" />
+    <Content Include="Image\logo-large.png" />
+    <Content Include="Image\main-image-bg.jpg" />
+    <Content Include="Image\main-wrapper-bg.png" />
+    <Content Include="Image\next-button.png" />
+    <Content Include="Image\next_button1.png" />
+    <Content Include="Image\owner.png" />
+    <Content Include="Image\pages.png" />
+    <Content Include="Image\pen.png" />
+    <Content Include="Image\pen1.png" />
+    <Content Include="Image\pen3.png" />
+    <Content Include="Image\pink.png" />
+    <Content Include="Image\PinkButton.png" />
+    <Content Include="Image\poster.png" />
+    <Content Include="Image\previous_button.png" />
+    <Content Include="Image\private-cloud-icon.png" />
+    <Content Include="Image\register.png" />
+    <Content Include="Image\Registry.ico" />
+    <Content Include="Image\req.png" />
+    <Content Include="Image\reque.png" />
+    <Content Include="Image\request.png" />
+    <Content Include="Image\request1.png" />
+    <Content Include="Image\Rounded_Button.png" />
+    <Content Include="Image\school_work_folder_by_centpushups.png" />
+    <Content Include="Image\Search-Globe.png" />
+    <Content Include="Image\Send.png" />
+    <Content Include="Image\submit-button.png" />
+    <Content Include="Image\submit.png" />
+    <Content Include="Image\top5.png" />
+    <Content Include="Image\update.png" />
+    <Content Include="Image\user.png" />
+    <Content Include="Image\user1.png" />
+    <Content Include="Image\user2.png" />
+    <Content Include="Image\view.png" />
+    <Content Include="Image\view1.png" />
+    <Content Include="Image\WeAre.png" />
+    <Content Include="Image\webbutton.png" />
+    <Content Include="Image\yellow.png" />
+    <Content Include="Image\yellow1.png" />
+    <Content Include="Image\yellow2.png" />
+    <Content Include="openfile.aspx" />
+    <Content Include="openfile1.aspx" />
+    <Content Include="ownerhome.aspx" />
+    <Content Include="privatekey.xml" />
+    <Content Include="publickey.xml" />
+    <Content Include="searchfile.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="uploadfile.aspx" />
+    <Content Include="userdetail.aspx" />
+    <Content Include="userdetails1.aspx" />
+    <Content Include="userhome.aspx" />
+    <Content Include="userlogin.aspx" />
+    <Content Include="userregister.aspx" />
+    <Content Include="userviewkey.aspx" />
+    <Content Include="viewrequest.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assignkey.aspx.cs">
+      <DependentUpon>assignkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cloud.master.cs">
+      <DependentUpon>cloud.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cloudhome.aspx.cs">
+      <DependentUpon>cloudhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cloudlogin.aspx.cs">
+      <DependentUpon>cloudlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default3.aspx.cs">
+      <DependentUpon>Default3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default4.aspx.cs">
+      <DependentUpon>Default4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default5.aspx.cs">
+      <DependentUpon>Default5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadfiles1.aspx.cs">
+      <DependentUpon>downloadfiles1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filedetail.aspx.cs">
+      <DependentUpon>filedetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filereceive.aspx.cs">
+      <DependentUpon>filereceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filerequest.aspx.cs">
+      <DependentUpon>filerequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="hacker.aspx.cs">
+      <DependentUpon>hacker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage2.master.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="openfile.aspx.cs">
+      <DependentUpon>openfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="openfile1.aspx.cs">
+      <DependentUpon>openfile1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ownerhome.aspx.cs">
+      <DependentUpon>ownerhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OwnerMasterPage.master.cs">
+      <DependentUpon>OwnerMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchfile.aspx.cs">
+      <DependentUpon>searchfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="uploadfile.aspx.cs">
+      <DependentUpon>uploadfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userdetail.aspx.cs">
+      <DependentUpon>userdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userdetails1.aspx.cs">
+      <DependentUpon>userdetails1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userhome.aspx.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMasterPage.master.cs">
+      <DependentUpon>UserMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userregister.aspx.cs">
+      <DependentUpon>userregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userviewkey.aspx.cs">
+      <DependentUpon>userviewkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewrequest.aspx.cs">
+      <DependentUpon>viewrequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cloud.master" />
+    <Content Include="MasterPage.master" />
+    <Content Include="MasterPage2.master" />
+    <Content Include="OwnerMasterPage.master" />
+    <Content Include="UserMasterPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="File\ASP.NET-MVC-2-RTM-Release-Notes.doc" />
+    <None Include="File\file1.pptx" />
+    <None Include="File\Itrack.docx" />
+    <None Include="File\redBus Ticket.pdf" />
+    <None Include="File\Sample.docx" />
+    <None Include="File\Timesheet.xlsx" />
+    <None Include="File\university.pdf" />
+    <None Include="File\Vaishnavi2014.doc" />
+    <None Include="Image\folder" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52780</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

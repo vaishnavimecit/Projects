@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : SimpleDisplay 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120611
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Secure and Dynamic Multi-keyword</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.gallerax-0.2.js"></script>
+<style type="text/css">
+@import "gallery.css";
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="wrapper">
+	<div id="header">
+		
+			<h1 style="font-size: xx-large" align="center">
+                &nbsp;</h1>
+            <h1 style="font-size: xx-large" align="center">
+                <a href="#" style="color: #FFCC00; font-weight: bold;" 
+                   >A Secure keyword Search Scheme over Cloud Data</a> </h1>
+            
+            
+	
+	</div>
+	<!-- end #header -->
+    <br />
+    <br />
+    <br />
+    <br />
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="home.aspx">Home</a></li>
+			<li><a href="signin.aspx">Data Owner</a></li>
+            <li><a href="cloudlogin.aspx">Cloud Server</a></li>
+            <li><a href="userlogin.aspx">User</a></li>
+          <%--  <li><a href="signin.aspx">Sign In</a></li>--%>
+			<li><a href="userregister.aspx">Register</a></li>
+		</ul>
+	</div>
+	<div id="two-columns">
+		<div id="col1">
+			<h2 align="center">Secure and Dynamic Multi-keyword</h2>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+		</div>
+		<div id="col2">
+            </div>
+	</div>
+	<!-- end #menu -->
+	
+	<!-- end #page --> 
+</div>
+<br />
+<br />
+<br />
+<br />
+<div id="footer">
+</div>
+<!-- end #footer -->
+  </form>
+</body>
+</html>
+
+
