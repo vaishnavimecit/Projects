@@ -1,0 +1,6 @@
+prod, month
+
+2
+1_count_quant, 2_count_quant
+0_avg_quant
+1#newtuple.prod.equals(temp.prod), 2#newtuple.prod.equals(temp.prod), 1#newtuple.month+1 == temp.month, 2#newtuple.month-1 == temp.month
