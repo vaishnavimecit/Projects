@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Outlets>
+  <City>
+    <Name>New York</Name>
+    <Phone>231-4545</Phone>    
+  </City>
+  <City>
+    <Name>Los Angeles</Name>
+    <Phone>241-4545</Phone>
+    </City>
+  <City>
+    <Name>Chicago</Name>
+    <Phone>251-4545</Phone>
+    </City>
+  <City>
+    <Name>Houston</Name>
+    <Phone>261-4545</Phone>
+    </City>
+  <City>
+    <Name>Philadelphia</Name>
+    <Phone>271-4545</Phone>
+    </City>
+  <City>
+    <Name>Phoenix</Name>
+    <Phone>281-4545</Phone>
+    </City>
+  <City>
+    <Name>San Antonio</Name>
+    <Phone>291-4545</Phone>
+    </City>
+  <City>
+    <Name>Dallas</Name>
+    <Phone>301-4545</Phone>
+    </City>
+  <City>
+    <Name>San Jose</Name>
+    <Phone>302-4545</Phone>
+    </City>
+  '<City>
+    <Name>Austin</Name>
+    <Phone>303-4545</Phone>
+    </City>
+  <City>
+    <Name>Columbus</Name>
+    <Phone>304-4545</Phone>
+  </City>
+ 
+    <City>
+    <Name>San Francisco</Name>
+      <Phone>305-4545</Phone>
+
+    </City>
+    <City>
+    <Name>Detroit</Name>
+      <Phone>306-4545</Phone>
+
+    </City>
+    <City>
+      <Name>Memphis</Name>
+      <Phone>307-4545</Phone>
+
+    </City>
+    <City>
+    <Name>Boston</Name>
+      <Phone>308-4545</Phone>
+
+    </City>
+    <City>
+    <Name>Seattle</Name>
+      <Phone>309-4545</Phone>
+
+    </City>
+    <City>
+    <Name>Denver</Name>
+      <Phone>310-4545</Phone>
+
+    </City>
+    <City>
+    <Name>Washington</Name>
+      <Phone>311-4545</Phone>
+      </City>
+    <City>
+    <Name>Nashville</Name>
+      <Phone>312-4545</Phone>
+      </City>
+        <City>         
+    <Name>Louisville</Name>
+          <Phone>313-4545</Phone>
+          </City>
+            <City>
+    <Name>Baltimore</Name>
+              <Phone>314-4545</Phone>
+              </City>
+                <City>
+    <Name>Oklahoma City</Name>
+                  <Phone>315-4545</Phone>
+              </City>
+                <City>
+    <Name>Kansas City</Name>
+                  <Phone>316-4545</Phone>
+                  </City>
+                    <City>
+    <Name>Kansas City</Name>
+                      <Phone>317-4545</Phone>
+                      </City>
+                        <City>
+    <Name> Atlanta</Name>
+                          <Phone>318-4545</Phone>
+                          </City>
+                            <City>
+    <Name>Minneapolis</Name>
+                              <Phone>310-4545</Phone>
+  </City>
+</Outlets>

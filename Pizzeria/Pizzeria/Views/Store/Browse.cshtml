@@ -1,0 +1,28 @@
+﻿@model Pizzeria.Models.Category
+
+@{
+    ViewBag.Title = "Browse Pizzas";
+}
+<div id="basketsummary">  @{Html.RenderAction("BasketSummary", "PizzaBasket");}</div>
+<div></div>
+
+<div  class="genre"> 
+<h2>Browsing: @Model.Name</h2> 
+<ul  id="pizza-list"> 
+@foreach  (var  pizza  in  Model.Items) 
+{ 
+<li> 
+<a  href="@Url.Action("Details",  new  {  id  =  pizza.ItemId  })"> 
+	<img  alt="@pizza.ItemName"  src="@pizza.ImageLocation"  /> 
+	<span>@pizza.ItemName</span> 
+    <p id="pizza-pricelist">$@pizza.ItemPrice</p>
+</a> 
+</li>
+}
+</ul> 
+</div> 
+
+
+
+
+

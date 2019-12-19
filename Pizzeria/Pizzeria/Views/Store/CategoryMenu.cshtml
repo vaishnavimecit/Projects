@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Pizzeria.Models.Category>
+
+<ul  id="categories"> 
+@foreach  (var  category  in  Model) 
+
+{ 
+<li>@Html.ActionLink(category.Name, 
+	"Browse",  "Store", 
+new  {  category  =  category.Name  },  null)
+<hr style="background:#F87431; border:0; height:1px" />
+</li>
+   
+} 
+</ul> 

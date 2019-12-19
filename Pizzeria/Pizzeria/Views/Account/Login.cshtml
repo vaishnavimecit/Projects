@@ -1,0 +1,57 @@
+﻿@{
+Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+
+@model Pizzeria.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+
+<section id="loginForm">
+<h2>Log in to administer Pizzeria.</h2>
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Log in Form</legend>
+        <table>
+            <tr>
+                <td>
+                @Html.LabelFor(m => m.UserName)
+                    </td>
+                <td>
+                @Html.TextBoxFor(m => m.UserName)
+                    </td>
+                <td>
+                @Html.ValidationMessageFor(m => m.UserName)
+                    </td>
+            </tr>
+            <tr>
+            <td>
+                @Html.LabelFor(m => m.Password)
+                </td>
+            <td>
+                @Html.PasswordFor(m => m.Password)
+                </td>
+            <td>
+                @Html.ValidationMessageFor(m => m.Password)
+                </td>
+            </tr>
+           <tr>
+               <td>
+                <input type="submit" value="Log in" />
+                   </td>
+               </tr>
+            @DateTime.Now
+        </table>
+       
+    </fieldset>
+  
+}
+</section>
+
+

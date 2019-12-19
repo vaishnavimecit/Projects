@@ -1,0 +1,69 @@
+﻿@model Pizzeria.ViewModels.ShoppingBasketViewModel
+
+
+@{
+    ViewBag.Title = "Shopping Basket";
+}
+
+
+<h3> 
+Your Pizza Basket 
+</h3> 
+<p  class="button"> 
+@Html.ActionLink("Place Order",  "Index",  "Order")
+</p>
+<p  class="button"> 
+ @Html.ActionLink("Clear Cart",  "ClearCart",  "PizzaBasket") 
+ </p> 
+<div  id="update-message"> 
+</div> 
+<table id="table-1"> 
+	<tr id="table-2"> 
+<th id="table-3"> 
+Pizza Name 
+</th> 
+<th id="table-3"> 
+Price  ($) 
+</th> 
+<th id="table-3"> 
+Quantity 
+</th> 
+<th id="table-3"></th> 
+</tr> 
+    @if (HttpContext.Current.Session["BASKETSESSION"] != null)
+    {
+foreach  (var  item  in  Model.BasketItems) 
+{ 
+<tr  id="table-2"> 
+   <td> 
+@Html.ActionLink(item.Item.ItemName,  "Details",  "Store",  new  {  id  =item.ItemId  },  null) 
+</td> 
+<td id="table-2"> 
+@item.Item.ItemPrice 
+</td> 
+<td  id="table-2"> 
+	@item.Count 
+</td> 
+<td> 
+ <p  id="removebutton"> 
+  @Html.ActionLink("Remove from cart",  "RemoveFromCart",  "PizzaBasket",  new  {  id  =item.ItemId  },  null) 
+</p> 
+
+</td>
+</tr>
+}
+<tr id="table-total">
+<td id="table-total">
+Total
+</td>
+<td>
+</td>
+<td>
+</td>
+<td  id="table-total"> 
+	$@Model.BasketTotal 
+</td> 
+</tr> 
+    }
+</table> 
+

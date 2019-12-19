@@ -1,0 +1,105 @@
+﻿@model Pizzeria.Models.Item
+
+<head>
+
+    <title></title>
+
+@{
+
+ViewBag.Title  =  "Pizza  -  "  +  Model.ItemName;
+
+}
+
+    <script src="~/Scripts/jquery-1.8.2.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+
+    </head>
+
+<div id="basketsummary">  @{Html.RenderAction("BasketSummary", "PizzaBasket");}</div>
+ <p></p>
+
+<p>
+
+<img  alt="@Model.ItemName"  src="@Model.ImageLocation"  />
+
+</p> 
+
+<p id="pizza-details-title">@Model.ItemName</p>
+
+<p id="pizza-details">
+
+<b>Price ($):
+
+@String.Format("{0:F}",  Model.ItemPrice)</b>
+
+    </p>
+
+<div  style="word-wrap: break-word; width: 250px" >
+
+   <p  id="pizza-details-ingredients">
+
+@Model.Ingredients
+
+       </p>
+
+    @using (Html.BeginForm("AddToCart", "PizzaBasket")) {
+
+@Html.Hidden(
+
+        "id",
+
+        Model.ItemId,
+
+        new { @class = "hiddencss", maxlength = 255 }
+
+    ); 
+
+   <p id="pizza-details">
+        <label for="quantity">Quantity</label>
+       </p>
+        <div style="width:50px;border: 1px solid black"> 
+
+    <select name="quantity" style="width:50px; border:5px">
+
+  <option value="1">1</option>
+
+  <option value="2">2</option>
+
+  <option value="3">3</option>
+
+  <option value="4">4</option>
+
+  <option value="5">5</option>
+
+         <option value="6">6</option>
+
+         <option value="7">7</option>
+
+         <option value="8">8</option>
+
+         <option value="9">9</option>
+
+         <option value="10">10</option>
+
+</select>
+
+    </div>
+
+<!--<input type="text" name="quantity" class="ajaxtextbox" required="required" />-->
+   
+<input type="submit" value="Add to Cart" />
+
+
+
+}
+
+ 
+
+ 
+
+ 
+
+    
+
+</div>

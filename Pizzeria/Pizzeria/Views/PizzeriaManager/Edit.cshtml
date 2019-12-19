@@ -1,0 +1,68 @@
+﻿@{
+Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+
+@model Pizzeria.Models.Item
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Edit Pizza</legend>
+
+        @Html.HiddenFor(model => model.ItemId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CategoryId, "Category")
+        </div>
+        <div class="editor-field"  style="width:165px;border: 1px solid black">
+            @Html.DropDownList("CategoryId", String.Empty)
+            @Html.ValidationMessageFor(model => model.CategoryId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ItemName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ItemName)
+            @Html.ValidationMessageFor(model => model.ItemName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ItemPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ItemPrice)
+            @Html.ValidationMessageFor(model => model.ItemPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Ingredients)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Ingredients)
+            @Html.ValidationMessageFor(model => model.Ingredients)
+        </div>
+         @Html.HiddenFor(model => model.ImageLocation)
+        
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index") |   @Html.ActionLink("Log off", "ClearCookie","PizzeriaManager")
+</div>
+
+@section Scripts{
+     @Scripts.Render("~/bundles/jquery")
+     @Scripts.Render("~/bundles/jqueryval")
+}

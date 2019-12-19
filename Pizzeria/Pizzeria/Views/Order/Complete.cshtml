@@ -1,0 +1,11 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "Order Placed";
+}
+
+<h2>Order  Placed</h2> 
+<p>Your order has been successfully placed. Please pay $@ViewBag.OrderTotal on receipt.</p> 
+
+<p>To order more pizzas  click @Html.ActionLink("Order more",  "Index",  "Home") 
+</p> 

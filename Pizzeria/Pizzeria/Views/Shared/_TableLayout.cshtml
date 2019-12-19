@@ -1,0 +1,76 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+       <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+       <link href="~/Content/Custom.css" rel="stylesheet" type="text/css" />
+       @RenderSection("Scripts", required: false)
+       @Scripts.Render("~/bundles/modernizr")
+       <script src="~/Scripts/Promo.js"></script>
+    </head>
+    <body style=" background-image:url(../../Content/Images/bg.jpg); margin:0; font-family:Arial, Helvetica, sansserif;  ">
+        <div>
+  <table id="table" style="width:100%; padding:0; border-collapse:collapse" border="0" >
+    <tr>
+        
+
+<td style="width:10%;background-image:url(../../Content/Images/header_bg.jpg); background-repeat:repeat-x;height:275px">&nbsp;</td>
+      <td style="background-image:url(../../Content/Images/header_bg.jpg); background-repeat:repeat-x; height:275px">
+        <table style="width:100%" border="0" padding:0; border-collapse:collapse">
+        <tr>
+          <td style="width:65%"><img id="TeddyImage" src="../../Content/Images/header_img.jpg" width="545" height="275"></td>
+          <td style="width:35%; text-align:right;vertical-align:bottom;color:#ffffff; font-family:Georgia; font-size:36px;"><span id="Name">Pizzeria</span></td>
+        </tr>
+      </table></td>
+      <td style="width:10%;background-image:url(../../Content/Images/header_bg.jpg); background-repeat:repeat-x;height:275px">&nbsp;</td>
+
+ 
+            
+     
+    </tr>
+    <tr>
+      <td style="width:10%">&nbsp;</td>
+      <td style="height:35px; background-color:#ffcc00;color:#000;text-align:center">
+        @Html.ActionLink("Home", "Index","Home") |
+        @Html.ActionLink("Contact Us", "Contact","Home") |
+       
+        @Html.ActionLink("Store", "Index","Store")    |
+      
+                      
+       </td>
+      <td style="width:10%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+
+       
+                  
+                <td style="background-color:whitesmoke ">
+                     @RenderBody()
+
+                </td>
+        
+      <td>&nbsp;</td>
+    </tr>
+      <tr>
+          
+              @RenderSection("footer", required: false)
+     
+    </tr>
+    <tr>
+      <td style="width:10%">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="width:10%">&nbsp;</td>
+    </tr>
+  </table>
+
+
+</div>
+
+       
+
+
+    </body>
+</html>

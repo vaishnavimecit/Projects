@@ -1,0 +1,55 @@
+﻿@{
+Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+
+@model Pizzeria.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<fieldset>
+    <legend>Pizza Detail</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ItemName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ItemPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ingredients)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ingredients)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImageLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImageLocation)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ItemId }) |
+    @Html.ActionLink("Back to List", "Index") |
+      @Html.ActionLink("Log off", "ClearCookie","PizzeriaManager")
+</p>

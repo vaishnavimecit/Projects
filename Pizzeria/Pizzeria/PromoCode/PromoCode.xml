@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DiscountDetails>
+  <Discount>
+    <PromoCode>PIZZ031</PromoCode>
+    <DiscountPercentage>10</DiscountPercentage>
+    </Discount>
+</DiscountDetails>

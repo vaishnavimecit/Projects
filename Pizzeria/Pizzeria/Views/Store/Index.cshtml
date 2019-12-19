@@ -1,0 +1,15 @@
+﻿@model	IEnumerable<Pizzeria.Models.Category>
+@{
+ViewBag.Title  =  "Store";
+}
+<div id="basketsummary">  @{Html.RenderAction("BasketSummary", "PizzaBasket");}</div>
+<h3>Browse  Categories</h3>
+
+<ul>
+
+@foreach  (var  category  in  Model) 
+{ 
+ <li>@Html.ActionLink(category.Name,  "Browse",  new  {  category  =  category.Name  })</li>
+}
+</ul> 
+

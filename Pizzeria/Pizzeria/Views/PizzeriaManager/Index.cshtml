@@ -1,0 +1,65 @@
+﻿@{
+Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+@model IEnumerable<Pizzeria.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+<p class="button">
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<p class="button">
+    @Html.ActionLink("Delivery Status", "Index","OrderManager")
+</p>
+<p class="button">
+    @Html.ActionLink("Log off", "ClearCookie","PizzeriaManager")
+</p>
+
+<table style="border:solid">
+    <tr style="border:solid">
+        <th style="border:thin; background:#FFCC00">
+           Pizza Type
+        </th>
+       <th style="border:thin; background:#FFCC00">
+            Pizza Name
+        </th>
+        <th style="border:thin; background:#FFCC00">
+           Price ($)
+        </th>
+        <th style="border:thin; background:#FFCC00">
+            Ingredients
+        </th>
+       
+         <th style="border:thin; background:#FFCC00">Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+     <tr>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.ItemName)
+        </td>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.ItemPrice)
+        </td>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.Ingredients)
+        </td>
+        
+        <td style="border:groove;width:100px">
+            @Html.ActionLink("Edit", "Edit", new { id=item.ItemId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ItemId })
+        </td>
+    </tr>
+    <tr>
+
+    </tr>
+}
+
+    
+</table>
+

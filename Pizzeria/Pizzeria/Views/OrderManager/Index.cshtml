@@ -1,0 +1,67 @@
+﻿@{
+Layout = "~/Views/Shared/_ManagerLayout.cshtml";
+}
+@model IEnumerable<Pizzeria.Models.Order>
+
+<p class="button">
+    @Html.ActionLink("Log off", "ClearCookie","PizzeriaManager")
+</p>
+<table style="border:solid">
+    <tr style="border:solid">
+        <th style=" border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.FirstName) 
+        </th>
+      <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.LastName) 
+        </th>
+         <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.Address) 
+        </th>
+           <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.ZipCode) 
+        </th>
+          <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.Phone) 
+        </th>
+         <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.Total) 
+        </th>
+         <th style="border:groove; background:#FFCC00">
+            @Html.DisplayNameFor(model => model.OrderStatus) 
+        </th>
+          <th style="border:groove; background:#FFCC00">
+           Action
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+         <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+         <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+         <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.ZipCode)
+        </td>
+        <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+             <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+         <td style="border:groove">
+            @Html.DisplayFor(modelItem => item.OrderStatus)
+        </td>
+        <td style="border:groove">
+            @Html.ActionLink("Confirm Delivery", "UpdateDeliveryStatus", new { id=item.OrderId })
+        </td>
+    </tr>
+}
+
+</table>
+<br></br>
