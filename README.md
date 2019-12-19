@@ -11,3 +11,8 @@ Effective and efficient search and data sharing in a secured fashio by encryptio
 ## Master's in Computer Science: 
 ### CS 562 - DBMS II - F19: 
 MF & EMF code generation using Java, PostGREs in Eclipse. Provide a sample MF or EMF query using PHI operator and process it by scanning the table or using hash key.
+## NIIT Projects
+### Pizzeria
+Online shopping website is to order and get Pizzas made using MVC as frontend and SQL as backend
+### Jean Station
+Jean station website is to buy textile online made using MVC as frontend and SQL as backend
