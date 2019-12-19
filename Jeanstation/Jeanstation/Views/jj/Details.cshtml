@@ -1,0 +1,43 @@
+﻿@model Jeanstation.Models.Jeans
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Jeans</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Jeans_Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Jeans_Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Details)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Details)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Jeanscategory.strCategory)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Jeanscategory.strCategory)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
